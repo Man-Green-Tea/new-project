@@ -11,24 +11,126 @@
 .header {
     background-image: url(img/bg-header.png);
     background-repeat: no-repeat;
+    background-position: center;
+    height: 1024px;
+    padding-top: 40px;
 }
 
-.logo {
+.header__nav {
     display: flex;
-    align-items: flex-end;
-
+    justify-content: space-around;
+    align-items: center;
 }
 
-.menu {
+.logo__header {
     display: flex;
-    justify-content: flex-end;
+
 }
 
-.carousel-item {
+// Тут обнулял отступы из-за бутстрапа, который не позволял центрировать элементы.
+.logo__text {
+    font-family: Raleway;
+    font-size: 34px;
+    line-height: 40px;
+    color: #FFFFFF;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+.header__menu {}
+
+.header__menu-list {
+    display: flex;
+    list-style: none;
+}
+
+.header__menu-list_padding {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding-left: 24px;
+}
+
+.header__menu-list_padding:hover {
+    color: #C7B299;
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    height: 915px;
+}
+
+.carousel__item {
     display: flex;
     flex-direction: column;
-    justify-items: center;
+    justify-content: flex-end;
     align-items: center;
+}
+
+.carousel-item__heading {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    color: #FFFFFF;
+}
+
+.carousel-item__head {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 52px;
+    line-height: 61px;
+    color: #FFFFFF;
+}
+
+.carousel-item__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 562px;
+}
+
+.carousel-item__button {
+    font-family: Roboto;
+    font-style: normal;
+    padding: 20px 42px;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    background: #988574;
+    border-radius: 3px;
+    margin-top: 40px;
+    border: 0
+}
+
+.carousel-item__button:hover {
+    box-shadow: inset 0 -3px 0 #736357;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    width: 10rem;
+    height: 5rem;
 }
 
 .logo__text {}
