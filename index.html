@@ -19,31 +19,33 @@
 </head>
 
 <body>
-    <header class="header ">
-        <div class="header__nav">
-            <nav class="logo__header"><img src="img/logos.svg" alt="logo">
-                <p class="logo__text">WAHOM</p>
-            </nav>
+    <header class="header">
+        <div class="header__nav header__container">
+            <nav class="logo__header"><a href="#"><img src="img/logos.svg" alt="logo"></a><a href="#"
+                    class="logo__text_decoration">
+                    <p class="logo__text">WAHOM</p>
+                </a></nav>
             <nav class="header__menu">
                 <ul class="header__menu-list">
-                    <li><a href="" class="header__menu-list_padding">Home</a><a href=""
-                            class="header__menu-list_padding">About us</a><a href=""
-                            class="header__menu-list_padding">Portfolio</a><a href=""
-                            class="header__menu-list_padding">Features</a><a href=""
-                            class="header__menu-list_padding">Blog</a><a href=""
-                            class="header__menu-list_padding">Pricing</a><a href=""
-                            class="header__menu-list_padding">Shortcodes</a><a href=""
+                    <li><a href="#" class="header__menu-list_padding">Home</a><a href=""
+                            class="header__menu-list_padding">About us</a><a href="#"
+                            class="header__menu-list_padding">Portfolio</a><a href="#"
+                            class="header__menu-list_padding">Features</a><a href="#"
+                            class="header__menu-list_padding">Blog</a><a href="#"
+                            class="header__menu-list_padding">Pricing</a><a href="#"
+                            class="header__menu-list_padding">Shortcodes</a><a href="#"
                             class="header__menu-list_padding">Contact</a><a class="header__menu-list_padding"
-                            href=""><img src="img/nav-mag.png" alt=""></a><a class="header__menu-list_padding"
-                            href=""><img src="img/search.png" alt=""></a></li>
+                            href="#"><img src="img/nav-mag.png" alt="market"></a><a class="header__menu-list_padding"
+                            href="#"><img src="img/search.png" alt="search"></a></li>
                 </ul>
             </nav>
         </div>
-        <div class="karusel">
+        <div class="karusel header__container">
             <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-indicators"><button type="button" data-bs-target="#carouselExampleIndicators"
-                        data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button
-                        type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                <div class="carousel-indicators header__container"><button type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                        aria-current="true" aria-label="Slide 1"></button><button type="button"
+                        data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
                         aria-label="Slide 2"></button><button type="button" data-bs-target="#carouselExampleIndicators"
                         data-bs-slide-to="2" aria-label="Slide 3"></button><button type="button"
                         data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
@@ -103,11 +105,11 @@
                     class="carousel-control-next-icon" aria-hidden="true"></span><span
                     class="visually-hidden">Next</span></button>
         </div>
-        </div>
     </header>
     <nav>
         <div class="services container">
-            <figure class="services__item"><a href=""><img class="services__img" src="img/design.svg" alt="Design"></a>
+            <figure class="services__item"><a href=""><img class="services__img services__design" src="img/design.svg"
+                        alt="Design"></a>
                 <figcaption>
                     <h3 class="services__heading">Web & App Design</h3>
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
@@ -115,7 +117,8 @@
                 </figcaption>
                 <div class="services__line"></div>
             </figure>
-            <figure class="services__item"><a href=""><img class="services__img" src="img/dev.svg" alt="Dev"></a>
+            <figure class="services__item"><a href=""><img class="services__img services__dev" src="img/dev.svg"
+                        alt="Dev"></a>
                 <figcaption>
                     <h3 class="services__heading">Development</h3>
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
@@ -123,7 +126,8 @@
                 </figcaption>
                 <div class="services__line"></div>
             </figure>
-            <figure class="services__item"><a href=""><img class="services__img" src="img/custom.svg" alt="Custom"></a>
+            <figure class="services__item"><a href=""><img class="services__img services__custom" src="img/custom.svg"
+                        alt="Custom"></a>
                 <figcaption>
                     <h3 class="services__heading">Customization</h3>
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
@@ -131,8 +135,8 @@
                 </figcaption>
                 <div class="services__line"></div>
             </figure>
-            <figure class="services__item"><a href=""><img class="services__img" src="img/marketing.svg"
-                        alt="Marketing"></a>
+            <figure class="services__item"><a href=""><img class="services__img services__marketing"
+                        src="img/marketing.svg" alt="Marketing"></a>
                 <figcaption>
                     <h3 class="services__heading">Marketing</h3>
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
@@ -142,6 +146,89 @@
             </figure>
         </div>
     </nav>
-</body>
+    <section class="waxom-is-realization">
+        <figure class="container">
+            <figcaption class="browsers">
+                <h2 class="browsers__heading">Waxom is Realization of your Ideas.</h2>
+                <p class="browsers__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                    saepius. Claritas est etiam processus dynamicus,
+                    qui sequitur mutationem consuetudium.</p>
+            </figcaption><img src="img/browsers.png" alt="browser">
+        </figure>
+    </section>
+    <section class="purchase">
+        <div class="purchase__flex container">
+            <div>
+                <h2 class="purchase__heading"><span class="purchase__head_color">Waxom</span>Multipurpose WordPress
+                    Theme </h2>
+                <p class="purchase__text">Don't Forget to Rate the Template. Thanks so much!</p>
+            </div><button class="purchase__button" type="button">Purchase Now</button>
+        </div>
+    </section>
+    <section class="our-project">
+        <div class="our-project__head container">
+            <h2 class="our-project__headind">Our Latest Projects.</h2>
+            <p class="our-project__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
+                Claritas est etiam processus dynamicus,
+                qui sequitur mutationem consuetudium.</p>
+        </div>
+        <div class="our-project__grid container">
+            <figure class="item"><img class="item__img" src="img/project-1.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Claritas Etiam Processus</h3>
+                    <p class="item__text">Photography,
+                        Nature</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+            <figure class="item"><img class="item__img" src="img/project-2.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Quam Nutamus Farum</h3>
+                    <p class="item__text">Graphic Design,
+                        Mock-Up</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+            <figure class="item"><img class="item__img" src="img/project-3.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Usus Legentis Videntur</h3>
+                    <p class="item__text">Photography,
+                        Holiday</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+            <figure class="item"><img class="item__img" src="img/project-4.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Claritas Etiam Processus</h3>
+                    <p class="item__text">Photography,
+                        Nature</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+            <figure class="item"><img class="item__img" src="img/project-5.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Quam Nutamus Farum</h3>
+                    <p class="item__text">Graphic Design,
+                        Mock-Up</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+            <figure class="item"><img class="item__img" src="img/project-6.png" alt="photo">
+                <figcaption class="item__bottom">
+                    <h3 class="item__heading">Usus Legentis Videntur</h3>
+                    <p class="item__text">Photography,
+                        Holiday</p><img class="item__bottom__img" src="img/polygon.svg" alt="">
+                </figcaption>
+            </figure>
+        </div>
+        <div class="our-project__button_position"><button class="our-project__button" type="button">LOAD MORE</button>
+        </div>
+    </section>
+    <section class="presentation header__container">
+        <div class="presentation_back">
+            <div class="presentation__content"><img class="presentation__img" src="img/Video.svg" alt="">
+                <h2 class="presentation__heading">Waxom Video Presentation</h2>
+                <p class="presentation__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                    saepius, qui sequitur
+                    mutationem consuetudium.</p>
+                <p class="presentation__text presentation__text_color">03:26</p>
+            </div>
+        </div>
+    </section>
 
 </html>

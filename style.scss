@@ -8,10 +8,16 @@
     margin: 0 auto;
 }
 
+.header__container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .header {
     background-image: url(img/bg-header.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-color: rgba(17, 17, 17, 0.7);
     height: 1024px;
     padding-top: 40px;
 }
@@ -24,7 +30,6 @@
 
 .logo__header {
     display: flex;
-
 }
 
 // Тут обнулял отступы из-за бутстрапа, который не позволял центрировать элементы.
@@ -40,6 +45,9 @@
     padding: 0;
 }
 
+.logo__text_decoration {
+    text-decoration: none;
+}
 
 .header__menu-list {
     display: flex;
@@ -59,6 +67,16 @@
 
 .header__menu-list_padding:hover {
     color: #C7B299;
+}
+
+.karusel {
+    position: relative;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
 }
 
 .carousel-inner {
@@ -155,6 +173,27 @@
     .services__line {
         background: #C7B299;
     }
+
+    // Это костыли, позже исправлю :)
+    .services__design {
+        content: url(img/design2.svg);
+        transition: all 0.5s;
+    }
+
+    .services__dev {
+        content: url(img/dev2.svg);
+        transition: all 0.5s;
+    }
+
+    .services__marketing {
+        content: url(img/marketing2.svg);
+        transition: all 0.5s;
+    }
+
+    .services__custom {
+        content: url(img/custom2.svg);
+        transition: all 0.5s;
+    }
 }
 
 .services__item {
@@ -167,6 +206,7 @@
 
 .services__img {
     margin-bottom: 30px;
+    transition: content 0.5s;
 }
 
 .services__heading {
@@ -201,6 +241,270 @@
     transition: background 0.5s;
 }
 
-svg {
-    fill: red;
+// svg {
+//     fill: red;
+// }
+
+.waxom-is-realization {
+    background-color: #FBFAF8;
+    padding-top: 80px;
+}
+
+.browsers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.browsers__heading {
+    font-family: Raleway;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #555555;
+}
+
+.browsers__text {
+    font-family: Montserrat;
+    max-width: 770px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #8C8C8C;
+}
+
+.purchase {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(94.87% 15543.47% at 4.58% 100%, #211B19 0%, #4E3326 100%);
+    min-height: 150px;
+}
+
+.purchase__flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchase__heading {
+    font-family: Raleway;
+    font-size: 28px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.purchase__head_color {
+    color: #C7B299;
+}
+
+.purchase__text {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 22px;
+    color: #615855;
+}
+
+.purchase__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #988574;
+    border-radius: 3px;
+    border: 0;
+    width: 170px;
+    height: 53px;
+}
+
+.our-project {
+    padding-top: 60px;
+    min-height: 1160px;
+}
+
+.our-project__head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+}
+
+.our-project__headind {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: center;
+    color: #555555;
+}
+
+.our-project__text {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #8C8C8C;
+}
+
+.our-project__grid {
+    display: grid;
+    grid-template-columns: 370px 370px 370px;
+    grid-template-rows: 398px 398px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.item {
+    position: relative;
+    height: 337px;
+    background-image: url(img/project-bg.svg);
+}
+
+.item:hover {
+    .item__bottom {
+        background-color: #352F2D;
+    }
+
+    .item__heading {
+        color: #FFFFFF;
+    }
+
+    .item__text {
+        color: #C7B299;
+    }
+
+    .item__bottom__img {
+        opacity: 0%;
+    }
+
+    .item__img {
+        opacity: 30%;
+    }
+}
+
+
+
+.item__bottom {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #FBFAF8;
+    padding-left: 23px;
+    height: 100px;
+    transition: background-color 0.5s;
+}
+
+.item__heading {
+    font-family: Raleway;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #C7B299;
+    transition: color 0.5s;
+}
+
+.item__text {
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D1D1D1;
+    transition: color 0.5s;
+}
+
+.item__img {
+    transition: opacity 0.5s;
+}
+
+.item__bottom__img {
+    position: absolute;
+    left: 14px;
+    bottom: 99px;
+    opacity: 100%;
+    transition: opacity 0.5s;
+}
+
+.our-project__button_position {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.our-project__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Roboto;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    background: #988574;
+    border-radius: 3px;
+    padding: 19px 47px;
+    border: 0;
+}
+
+.presentation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/bg_video_presentation.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 705px;
+    box-sizing: border-box;
+}
+
+
+.presentation__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .presentation__img {
+        padding-bottom: 30px;
+    }
+}
+
+.presentation__heading {
+    font-family: Raleway;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 35px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.presentation__text {
+    font-family: Montserrat;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    color: #FFFFFF;
+    max-width: 570px;
+}
+
+.presentation__text_color {
+    color: #C7B299;
 }
