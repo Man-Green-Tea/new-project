@@ -11,9 +11,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
         crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/4f408099f2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;800&family=Raleway:wght@100;400;800&family=Roboto:wght@100;400;900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -23,7 +24,7 @@
         <div class="header__nav header__container">
             <nav class="logo__header"><a href="#"><img src="img/logos.svg" alt="logo"></a><a href="#"
                     class="logo__text_decoration">
-                    <p class="logo__text">WAHOM</p>
+                    <p class="logo__text">Waxom</p>
                 </a></nav>
             <nav class="header__menu">
                 <ul class="header__menu-list">
@@ -115,7 +116,6 @@
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
                         doming id quod mazim.</p>
                 </figcaption>
-                <div class="services__line"></div>
             </figure>
             <figure class="services__item"><a href=""><img class="services__img services__dev" src="img/dev.svg"
                         alt="Dev"></a>
@@ -124,7 +124,6 @@
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
                         doming id quod mazim.</p>
                 </figcaption>
-                <div class="services__line"></div>
             </figure>
             <figure class="services__item"><a href=""><img class="services__img services__custom" src="img/custom.svg"
                         alt="Custom"></a>
@@ -133,7 +132,6 @@
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
                         doming id quod mazim.</p>
                 </figcaption>
-                <div class="services__line"></div>
             </figure>
             <figure class="services__item"><a href=""><img class="services__img services__marketing"
                         src="img/marketing.svg" alt="Marketing"></a>
@@ -142,7 +140,6 @@
                     <p class="services__text">Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet
                         doming id quod mazim.</p>
                 </figcaption>
-                <div class="services__line"></div>
             </figure>
         </div>
     </nav>
@@ -167,11 +164,25 @@
     </section>
     <section class="our-project">
         <div class="our-project__head container">
-            <h2 class="our-project__headind">Our Latest Projects.</h2>
+            <h2 class="our-project__heading">Our Latest Projects.</h2>
             <p class="our-project__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius.
                 Claritas est etiam processus dynamicus,
                 qui sequitur mutationem consuetudium.</p>
         </div>
+        <nav>
+            <div class="form_radio_group container">
+                <div class="form_radio_btn"><input id="radio-1" type="radio" name="radio" value="1" checked><label
+                        for="radio-1">All</label></div>
+                <div class="form_radio_btn"><input id="radio-2" type="radio" name="radio" value="2"><label
+                        for="radio-2">Web Design</label></div>
+                <div class="form_radio_btn"><input id="radio-3" type="radio" name="radio" value="3"><label
+                        for="radio-3">Mobile App</label></div>
+                <div class="form_radio_btn"><input id="radio-4" type="radio" name="radio" value="4"><label
+                        for="radio-4">Illustration</label></div>
+                <div class="form_radio_btn"><input id="radio-5" type="radio" name="radio" value="5"><label
+                        for="radio-5">Photography</label></div>
+            </div>
+        </nav>
         <div class="our-project__grid container">
             <figure class="item"><img class="item__img" src="img/project-1.png" alt="photo">
                 <figcaption class="item__bottom">
@@ -219,16 +230,213 @@
         <div class="our-project__button_position"><button class="our-project__button" type="button">LOAD MORE</button>
         </div>
     </section>
-    <section class="presentation header__container">
-        <div class="presentation_back">
+    <section class="presentation">
+        <div class="presentation_back container">
             <div class="presentation__content"><img class="presentation__img" src="img/Video.svg" alt="">
                 <h2 class="presentation__heading">Waxom Video Presentation</h2>
                 <p class="presentation__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
-                    saepius, qui sequitur
-                    mutationem consuetudium.</p>
+                    saepius,
+                    qui sequitur mutationem consuetudium.</p>
                 <p class="presentation__text presentation__text_color">03:26</p>
             </div>
         </div>
     </section>
+    <section class="mobile">
+        <div class="mobile-devices container">
+            <div class="iphone"><img src="img/iphone.png" alt="iphones"></div>
+            <div class="mobile-content">
+                <div class="mobile-content__text">
+                    <h2 class="mobile-content__heading">Excellent for Mobile Devices.</h2>
+                    <p class="mobile-content__p mobile-content_margin">Qisi enim ad minim veniam,
+                        quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo
+                        consequat. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius
+                        claritas. Eodem modo typi,
+                        qui nunc nobis videntur parum clari,
+                        fiant sollemnes in futurum. </p>
+                </div>
+                <div class="mobile-content__list">
+                    <p class="mobile-content__p"><img class="mobile-content__img" src="img/arrow.svg" alt="arrow">Nam
+                        liber tempor cum soluta nobis eleifend option;
+                    </p>
+                    <p class="mobile-content__p"><img class="mobile-content__img" src="img/arrow.svg" alt="arrow">Option
+                        congue nihil imperdiet doming id quod mazim placerat facer;
+                    </p>
+                    <p class="mobile-content__p"><img class="mobile-content__img" src="img/arrow.svg" alt="arrow">Eodem
+                        modo typi,
+                        qui nunc nobis videntur parum futurum;
+                    </p>
+                    <p class="mobile-content__p"><img class="mobile-content__img" src="img/arrow.svg"
+                            alt="arrow">Investigationes demonstraverunt lectores</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="counters">
+        <div class="counter-content container">
+            <figure class="counter-item"><img src="img/clients.svg" alt="clients">
+                <figcaption class="counter-item__text">
+                    <h2 class="counter-item__heading">3587</h2>
+                    <p class="counter-item__p">Satisfied Clients</p>
+                </figcaption>
+            </figure>
+            <figure class="counter-item"><img src="img/coffe.svg" alt="coffe">
+                <figcaption class="counter-item__text">
+                    <h2 class="counter-item__heading">207</h2>
+                    <p class="counter-item__p">Cups of coffee</p>
+                </figcaption>
+            </figure>
+            <figure class="counter-item"><img src="img/posts.svg" alt="posts">
+                <figcaption class="counter-item__text">
+                    <h2 class="counter-item__heading">2500</h2>
+                    <p class="counter-item__p">Blog posts</p>
+                </figcaption>
+            </figure>
+            <figure class="counter-item"><img src="img/likes.svg" alt="likes">
+                <figcaption class="counter-item__text">
+                    <h2 class="counter-item__heading">873</h2>
+                    <p class="counter-item__p">Likes</p>
+                </figcaption>
+            </figure>
+            <figure class="counter-item"><img src="img/launched.svg" alt="launched">
+                <figcaption class="counter-item__text">
+                    <h2 class="counter-item__heading">900</h2>
+                    <p class="counter-item__p">We launched</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+    <section class="recent-posts header__container">
+        <div class="recent-posts__head">
+            <h2 class="resent-posts__heading">Recent Posts.</h2>
+            <p class="resent-posts__text">Investigationes demonstraverunt lectores legere me lius quod ii legunt
+                saepius. Claritas est etiam processus dynamicus,
+                qui sequitur mutationem consuetudium.</p>
+        </div>
+        <div class="recent-posts__grid">
+            <figure class="recent-item"><img class="recent-item_img" src="img/bg_item.png" alt="photo">
+                <figcaption class="recent-item__bottom">
+                    <h3 class="recent-item__heading">Lorem ipsum dolor sit amet</h3>
+                    <p class="recent-item__text">Claritas est etiam processus dynamicus,
+                        qui sequitur mutationem consuetudium.</p><a href="#" class="read-more">Read More <img
+                            class="read-more__img" src="img/arrows.svg" alt="arrows"></a>
+                </figcaption>
+                <div class="recent-date">
+                    <h2 class="recent-date__heading">30</h2>
+                    <p class="recent-date__text">Sep.</p>
+                </div>
+            </figure>
+            <figure class="recent-item"><img class="recent-item_img" src="img/bg_item_2.png" alt="photo">
+                <figcaption class="recent-item__bottom">
+                    <h3 class="recent-item__heading">Lorem ipsum dolor sit amet</h3>
+                    <p class="recent-item__text">Claritas est etiam processus dynamicus,
+                        qui sequitur mutationem consuetudium.</p><a href="#" class="read-more">Read More <img
+                            class="read-more__img" src="img/arrows.svg" alt="arrows"></a>
+                </figcaption>
+                <div class="recent-date">
+                    <h2 class="recent-date__heading">30</h2>
+                    <p class="recent-date__text">Sep.</p>
+                </div>
+            </figure>
+            <figure class="recent-item"><img class="recent-item_img" src="img/bg_item_3.png" alt="photo">
+                <figcaption class="recent-item__bottom">
+                    <h3 class="recent-item__heading">Lorem ipsum dolor sit amet</h3>
+                    <p class="recent-item__text">Claritas est etiam processus dynamicus,
+                        qui sequitur mutationem consuetudium.</p><a href="#" class="read-more">Read More <img
+                            class="read-more__img" src="img/arrows.svg" alt="arrows"></a>
+                </figcaption>
+                <div class="recent-date">
+                    <h2 class="recent-date__heading">30</h2>
+                    <p class="recent-date__text">Sep.</p>
+                </div>
+            </figure>
+        </div>
+        <div class="recent-posts__bottom"><i class="fas fa-chevron-left"></i><i class="fas fa-chevron-right"></i></div>
+    </section>
+    <section class="partners">
+        <div class="partners__content container">
+            <figure><img src="img/logo_item1.png" alt=""></figure>
+            <figure><img src="img/logo_item2.png" alt=""></figure>
+            <figure><img src="img/logo_item3.png" alt=""></figure>
+            <figure><img src="img/logo_item4.png" alt=""></figure>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__header">
+                <div class="footer__margin">
+                    <nav class="logo__header"><a href="#"><img src="img/logos.svg" alt="logo"></a><a href="#"
+                            class="logo__text_decoration">
+                            <p class="logo__text">Waxom</p>
+                        </a></nav>
+                </div>
+                <div>
+                    <p class="footer_p footer__read-more">Lorem ipsum dolor sit amet,
+                        consectetuer adipiscing elit,
+                        sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi
+                        enim ad minim veniam,
+                        quis nostrud exerci suscipit lobortis claritatem.</p><a href="#" class="read-more">Read More
+                        <img class="read-more__img" src="img/arrows.svg" alt="arrows"></a>
+                </div>
+            </div>
+            <div class="footer__flex">
+                <div class="footer__item footer__item_margin">
+                    <h2 class="footer__head">Recent Posts</h2>
+                    <div class="footer__br footer__hover">
+                        <h3 class="footer__heading">September 08,
+                            2015</h3>
+                        <p class="footer_p">Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="footer__br footer__hover">
+                        <h3 class="footer__heading">September 08,
+                            2015</h3>
+                        <p class="footer_p">Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit</p>
+                    </div>
+                    <div class="footer__hover">
+                        <h3 class="footer__heading">September 08,
+                            2015</h3>
+                        <p class="footer_p">Lorem ipsum dolor sit amet,
+                            consectetuer adipiscing elit</p>
+                    </div>
+                </div>
+                <div class="footer__item footer__item_margin">
+                    <h2 class="footer__head">Our Twitter</h2>
+                    <div class="footer__br footer__hover">
+                        <p class="footer_p footer__heading_p">@waxom Cum soluta nobis eleifend option congue nihil
+                            imperdiet
+                            doming</p>
+                        <p class="footer__heading">3 mins ago</p>
+                    </div>
+                    <div class="footer__br footer__hover">
+                        <p class="footer_p footer__heading_p">Mirum est #envato notare quam littera gothica,
+                            quam nunc putamus parum anteposuerit litterarum </p>
+                        <p class="footer__heading">5 hours ago</p>
+                    </div>
+                    <div class="footer__hover">
+                        <p class="footer_p footer__heading_p">Soluta nobis option bit.ly/1Hniso7</p>
+                        <p class="footer__heading">20 days ago</p>
+                    </div>
+                </div>
+                <div class="footer__item">
+                    <h2 class="footer__head">Dribbble Widget</h2>
+                    <div class="footer__item_grid"><img class="footer__img_magrin footer__img_magrin-bottom"
+                            src="img/footer_item1.png" alt=""><img class="footer__img_magrin-bottom"
+                            src="img/footer_item2.png" alt=""><img class="footer__img_magrin" src="img/footer_item3.png"
+                            alt=""><img src="img/footer_item4.png" alt=""></div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    <div class="footer__copy">
+        <div class="footer__copy_flex header__container">
+            <p class="footer__copy_text">Copyright © 2015 Waxom</p>
+            <p class="footer__copy_text">Privacy Policy</p>
+            <p class="footer__copy_text">FAQ</p>
+            <p class="footer__copy_text">Support</p>
+        </div>
+
+    </div>
 
 </html>
